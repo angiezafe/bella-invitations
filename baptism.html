@@ -295,6 +295,14 @@
   .venue .badge{display:inline-block;margin-top:6px;font-size:.8rem;font-weight:700;color:var(--white);background:var(--rose);border-radius:999px;padding:2px 10px}
   .venue .addr{margin-top:6px}
   .venue .addr small{display:block;font-size:.88rem;opacity:.8}
+  .good-to-know .gtk-sub{font-size:.9rem;opacity:.85}
+  .good-to-know .tips{margin-top:10px}
+  .getting-there{padding:0 18px 16px}
+  .venue-photo{margin:0;border-radius:16px;overflow:hidden;border:1.5px solid var(--petal)}
+  .venue-photo img{display:block;width:100%;height:220px;object-fit:cover;object-position:50% 62%}
+  .venue-photo figcaption{font-size:.74rem;opacity:.7;padding:6px 10px;background:#FFF9FB}
+  .tips{list-style:none;margin-top:12px;display:grid;gap:8px}
+  .tips li{background:var(--blush);border-radius:12px;padding:10px 12px;font-size:.92rem}
   .venue iframe{display:block;width:100%;height:190px;border:0;border-top:1.5px solid var(--petal);background:var(--blush)}
   .info-card{margin-top:16px;background:var(--white);border-radius:22px;border:1.5px solid var(--petal);padding:18px}
   .info-card h3{font-family:var(--display);font-size:1.2rem;color:var(--rose-deep)}
@@ -318,6 +326,8 @@
   .give-btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
   .gift-skel{height:104px;border-radius:20px;background:linear-gradient(90deg,var(--petal),#fff,var(--petal));background-size:200% 100%}
   @media (prefers-reduced-motion:no-preference){.gift-skel{animation:shimmer 1.2s linear infinite}@keyframes shimmer{to{background-position:-200% 0}}}
+  .gift-note{margin-top:14px;border:2px dashed var(--rose);background:#FFF9FB}
+  .gift-note .meta-small{font-size:.86rem;opacity:.8;margin-top:8px}
   .soon{margin-top:18px;text-align:center;padding:26px 20px;border-radius:22px;background:var(--white);border:2px dashed var(--rose)}
   .soon-ico{display:inline-grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--rose);color:#fff;border:2.5px solid var(--plum);font-size:1.5rem}
   .soon h3{font-family:var(--display);font-size:1.5rem;color:var(--rose-deep);margin-top:10px}
@@ -449,12 +459,12 @@
     </article>
     <article class="event">
       <h2>Reception</h2>
-      <p class="when">Saturday, November 7, 2026<br>12:00 noon</p>
-      <p class="where">Chef Patrick's Kitchen Dine and Cheers 2<small>Dine & Cheers Events Place, UE Tech, Caloocan City</small></p>
+      <p class="when">Saturday, November 7, 2026<br>11:00 AM</p>
+      <p class="where">Chef Patrick's Kitchen Dine and Cheers 2<small>2nd floor, Dine & Cheers Events Place, UE Tech, Caloocan City</small></p>
       <div class="links">
         <a class="chip" href="https://maps.app.goo.gl/nWMhGAyEWDs1UUFJ8" target="_blank" rel="noopener">Google Maps</a>
         <a class="chip" href="https://waze.com/ul/hwdw52u7tb" target="_blank" rel="noopener">Waze</a>
-        <a class="chip" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bella%27s+Christening+Reception&dates=20261107T120000%2F20261107T150000&ctz=Asia%2FManila&location=Chef+Patrick%27s+Kitchen+Dine+and+Cheers+2" target="_blank" rel="noopener">Add to calendar</a>
+        <a class="chip" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bella%27s+Christening+Reception&dates=20261107T110000%2F20261107T160000&ctz=Asia%2FManila&location=Chef+Patrick%27s+Kitchen+Dine+and+Cheers+2" target="_blank" rel="noopener">Add to calendar</a>
       </div>
     </article>
   </section>
@@ -577,7 +587,7 @@
     <p class="panel-sub">Saturday, November 7, 2026</p>
     <ol class="timeline">
       <li><b>10:00 AM</b>Christening at Saint Gabriel Archangel Parish</li>
-      <li><b>12:00 noon</b>Reception at Chef Patrick's Kitchen Dine and Cheers 2</li>
+      <li><b>11:00 AM to 4:00 PM</b>Reception at Chef Patrick's Kitchen Dine and Cheers 2</li>
     </ol>
     <article class="venue" data-part="church">
       <div class="venue-body">
@@ -591,25 +601,52 @@
           <a class="chip" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bella%27s+Christening&dates=20261107T100000%2F20261107T113000&ctz=Asia%2FManila&location=Saint+Gabriel+Archangel+Parish%2C+Araneta+Avenue+corner+Caimito+Road%2C+Caloocan+City" target="_blank" rel="noopener">Add to calendar</a>
         </div>
       </div>
+      <div class="getting-there">
+        <ul class="tips">
+          <li><b>Parking:</b> the church has no designated parking nearby. If you park on the street, it&#8217;s at your own risk, so we suggest taking a ride or a cab if you can.</li>
+        </ul>
+      </div>
       <iframe data-src="https://maps.google.com/maps?q=14.6585636,120.9806177&z=17&output=embed" title="Map of Saint Gabriel Archangel Parish" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </article>
     <article class="venue" data-part="reception">
       <div class="venue-body">
         <h3>Reception</h3>
         <span class="badge hidden">You'll be here ♥</span>
-        <p class="when">12:00 noon</p>
-        <p class="addr">Chef Patrick's Kitchen Dine and Cheers 2<small>Dine & Cheers Events Place, UE Tech, Caloocan City</small></p>
+        <p class="when">11:00 AM to 4:00 PM</p>
+        <p class="addr">Chef Patrick's Kitchen Dine and Cheers 2<small>2nd floor, Dine & Cheers Events Place, UE Tech, Caloocan City</small></p>
         <div class="links">
           <a class="chip" href="https://maps.app.goo.gl/nWMhGAyEWDs1UUFJ8" target="_blank" rel="noopener">Google Maps</a>
           <a class="chip" href="https://waze.com/ul/hwdw52u7tb" target="_blank" rel="noopener">Waze</a>
-          <a class="chip" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bella%27s+Christening+Reception&dates=20261107T120000%2F20261107T150000&ctz=Asia%2FManila&location=Chef+Patrick%27s+Kitchen+Dine+and+Cheers+2" target="_blank" rel="noopener">Add to calendar</a>
+          <a class="chip" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bella%27s+Christening+Reception&dates=20261107T110000%2F20261107T160000&ctz=Asia%2FManila&location=Chef+Patrick%27s+Kitchen+Dine+and+Cheers+2" target="_blank" rel="noopener">Add to calendar</a>
         </div>
+      </div>
+      <div class="getting-there">
+        <figure class="venue-photo">
+          <img src="venue-building.jpg" alt="The building, with a 7-Eleven on the ground floor and a parking entrance below" loading="lazy">
+          <figcaption>Look for this building · Photo: Google Street View</figcaption>
+        </figure>
+        <ul class="tips">
+          <li><b>Find us:</b> Dine &amp; Cheers, Chef Patrick&#8217;s Kitchen, on the <b>2nd floor</b>. Take the stairs or the elevator.</li>
+          <li><b>Parking:</b> in the basement of the building, and inside the subdivision.</li>
+        </ul>
       </div>
       <iframe data-src="https://maps.google.com/maps?q=14.6581875,120.9752656&z=17&output=embed" title="Map of Chef Patrick's Kitchen Dine and Cheers 2" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </article>
     <article class="info-card dress">
       <h3>What to wear</h3>
       <p>The party has an anime theme for the kids. Little ones can come dressed as their favorite anime character, so they'll have fun and something to chat about with new friends.</p>
+    </article>
+    <article class="info-card good-to-know">
+      <h3>Good to know</h3>
+      <p class="gtk-sub">A few house rules from the venue, so the day goes smoothly for everyone.</p>
+      <ul class="tips">
+        <li><b>Party hours:</b> the reception runs from 11:00 AM to 4:00 PM.</li>
+        <li><b>Your RSVP is your seat:</b> please come with only the guests in your reply. We send the final headcount to the venue on November 4, and they can&#8217;t add people after that.</li>
+        <li><b>Food allergies:</b> text Maria by November 4 so the kitchen can prepare something safe.</li>
+        <li><b>Outside food and drinks:</b> please don&#8217;t bring any. The venue charges a fee for food from outside.</li>
+        <li><b>Non-smoking venue:</b> smoking is only allowed in the venue&#8217;s designated area.</li>
+        <li><b>Little ones:</b> please keep an eye on them. The venue charges for anything broken.</li>
+      </ul>
     </article>
     <article class="info-card">
       <h3>Questions?</h3>
@@ -624,7 +661,12 @@
   <!-- GIFTS -->
   <section class="panel hidden" id="tab-gifts" role="tabpanel" aria-labelledby="t-gifts">
     <h2 class="panel-title">Gift registry</h2>
-    <p class="panel-sub" id="giftIntro">Your presence is the best gift. If you'd like to bring something, here are a few things Bella would love. Tap "I'll give this" so no one buys the same thing.</p>
+    <p class="panel-sub" id="giftIntro">Your presence is the best gift 💕 If you'd like to bring something, we'd be so grateful if you choose from this list.</p>
+    <div class="info-card gift-note" id="giftNote">
+      <h3>Helping us avoid toy overload</h3>
+      <p>Bella already has more toys than she can play with, so we picked everyday things she'll truly use and benefit from as she grows. Rest assured, everything here is something she needs.</p>
+      <p class="meta-small">Tap "I'll give this" so we know what's coming. More than one guest can give the same thing.</p>
+    </div>
     <div class="soon hidden" id="giftSoon">
       <span class="soon-ico" aria-hidden="true">✿</span>
       <h3>Coming soon!</h3>
@@ -1153,7 +1195,8 @@
       const open = data.open !== false;
       $('giftSoon').classList.toggle('hidden', open);
       $('giftIntro').classList.toggle('hidden', !open);
-      $('giftTileSub').textContent = open ? 'Things Bella would love' : 'Coming soon';
+      $('giftNote').classList.toggle('hidden', !open);
+      $('giftTileSub').textContent = open ? "Things Bella will truly use" : 'Coming soon';
       if (!open) { list.innerHTML = ''; return; }
       renderGifts(data.items || []);
     } catch (e) {
@@ -1168,8 +1211,11 @@
     $('giftEmpty').classList.toggle('hidden', items.length > 0);
     list.innerHTML = items.map(it => {
       const img = safeUrl(it.image) ? `<img class="gift-img" src="${esc(it.image)}" alt="" loading="lazy">` : `<span class="gift-img" aria-hidden="true">✿</span>`;
-      const taken = it.left <= 0 && !it.mine;
-      const leftTxt = it.qty > 1 ? (it.left > 0 ? `${it.left} of ${it.qty} still needed` : 'All taken, thank you!') : (taken ? 'Someone is already giving this ♥' : '');
+      const taken = !it.unlimited && it.left <= 0 && !it.mine;
+      const others = it.count - (it.mine ? 1 : 0);
+      const leftTxt = it.unlimited
+        ? (others > 0 ? (others === 1 ? '1 other guest is giving this ♥' : others + ' other guests are giving this ♥') : '')
+        : it.qty > 1 ? (it.left > 0 ? `${it.left} of ${it.qty} still needed` : 'All taken, thank you!') : (taken ? 'Someone is already giving this ♥' : '');
       const shop = safeUrl(it.link) ? `<a class="chip" href="${esc(it.link)}" target="_blank" rel="noopener">Where to buy</a>` : '';
       const btn = it.mine
         ? `<span class="left">You're giving this ♥</span><button type="button" class="give-btn undo" data-id="${it.id}" data-name="${esc(it.name)}" data-op="release">Undo</button>`
