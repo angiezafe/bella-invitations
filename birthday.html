@@ -247,6 +247,7 @@
   .envelope:disabled{cursor:default}
   .deadline{text-align:center;margin-top:10px;font-size:.92rem;color:var(--rose-deep)}
   .deadline b{font-weight:700}
+  .late-btn{display:block;width:100%;margin-top:12px;border:2.5px solid var(--plum);border-radius:999px;background:var(--rose);color:var(--white);font:700 .98rem var(--body);padding:12px 16px;box-shadow:3px 3px 0 var(--plum);cursor:pointer}
   .closed{text-align:center;margin-top:16px;padding:14px;border-radius:14px;background:var(--blush);font-weight:500}
 
   /* ================= guest page ================= */
@@ -465,7 +466,7 @@
       <p class="deadline" id="deadlineNote">Kindly reply by <b>Friday, October 23</b>.</p>
       <div class="closed hidden" id="closedNote">
         <p>Replies closed on October 23. If your plans changed, please text Maria at 0915 500 9590.</p>
-        <button type="button" class="edit-link" id="lateHub">You can still leave Bella a message or a wish</button>
+        <button type="button" class="late-btn" id="lateHub">Visit Bella&#8217;s page: gift registry, messages and wishes</button>
       </div>
 
       <form id="rsvpForm" novalidate>
@@ -1443,7 +1444,7 @@
       if (!guestInfo) return;
       $('pass').classList.add('hidden'); $('doneMsg').textContent = '';
       document.querySelectorAll('.venue .badge').forEach(b => b.classList.add('hidden'));
-      enterHub('messages');
+      enterHub('gifts');
     });
     $('editBtn').classList.add('hidden');
     $('editClosed').classList.remove('hidden');
